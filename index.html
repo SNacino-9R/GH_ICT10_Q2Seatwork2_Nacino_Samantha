@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SW2: Student Grade Calculator</title>
+<link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+<script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+<style></style>
+</head>
+
+<body>
+
+   <h2>Student Grade Calculator</h2>
+    <form>
+            <div class="mb-3">
+                <label class="form-label">First Name:</label>
+                <input type="text" id="fname" class="form-control" placeholder="Enter first name">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Last Name:</label>
+                <input type="text" id="lname" class="form-control" placeholder="Enter last name">
+            </div> <p class="fw-bold mt-3 mb-1">Enter your grades:</p>
+            <div class="row g-2">
+                <div class="col"><input type="number" id="science" class="form-control" placeholder="Science"></div>
+                <div class="col"><input type="number" id="math" class="form-control" placeholder="Math"></div>
+            </div>
+            <div class="row g-2 mt-2">
+                <div class="col"><input type="number" id="english" class="form-control" placeholder="English"></div>
+                <div class="col"><input type="number" id="filipino" class="form-control" placeholder="Filipino"></div>
+            </div>
+            <div class="row g-2 mt-2">
+                <div class="col"><input type="number" id="ict" class="form-control" placeholder="ICT"></div>
+                <div class="col"><input type="number" id="pe" class="form-control" placeholder="PE"></div>
+            </div>
+
+            <button type="button" class="btn btn-calc w-100 mt-3" pys-onClick="calculate_gwa">Calculate GWA</button>
+                <div id="result"></div>
+        </form>
+
+    <div id="result"></div>
+    <py-script src="main.py"></py-script>
+  </div>
+</body>
+</html>
